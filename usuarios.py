@@ -1,3 +1,5 @@
+#Deve editar as linhas que possuem caminhos do sistema operacional
+#Must be changed lines which have patch locate of S.O 
 import os
 import paramiko
 import data
@@ -97,10 +99,10 @@ def BackupM():
 
     smtp = smtplib.SMTP_SSL('smtp.mail.yahoo.com', 465)
 
-    smtp.login('ismaellima807@yahoo.com', 'elmelo01021996')
+    smtp.login('mail', 'password')
 
-    de = 'ismaellima807@yahoo.com'
-    para = ['wallacedanrley.arc@gmail.com']
+    de = 'who send'
+    para = ['from']
 
     msg = """From: %s
     To: %s
